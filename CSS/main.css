@@ -1,0 +1,619 @@
+body{
+  margin: 0px;
+  margin-top: 0px;
+  font-family: 'Arvo', serif;
+}
+
+main{
+  max-width: fixed;
+  max-width:1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*------------------------- NAV BAR------------------------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color:  #E76A4B;
+    border-bottom: black solid 2px;
+    height: 40px;
+    margin-top: 0px;
+    position: relative;
+    z-index: 1;
+
+  }
+  
+ 
+.nav-left{
+  display:flex;
+  justify-content: flex-start;
+}
+
+  .nav-logo{
+    background-image: url(../Images/roku.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+   }
+
+   .nav-right{
+    padding: 40px 15px 15px 15px;
+   }
+
+ ul{
+    display: flex;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+
+  
+  .nav-links{
+    color: white;
+    text-decoration: none;
+  }
+  
+  li {
+    padding-left: 30px;
+    padding-right: 20px; 
+  }
+
+.menu{
+  display: none;
+}
+
+
+.ham{
+  display: none;
+}
+
+  .r-left a:hover {
+    color: black;
+    text-decoration: none;
+
+  }
+
+  .r-right a:hover {
+    color: black;
+    text-decoration: none;
+  }
+/* -------------------------MAIN SEARCH BAR ------------------------- */
+  .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+  }
+
+
+.banner{
+    width: 500px; 
+    height: 500px; 
+    background-image: url(../Images/orange-circle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 100px;
+    text-align: center;
+    margin-top: 20px;
+    margin: auto;
+  }
+
+.banner-1-1{
+  display: none;
+}
+
+.banner-2{
+  display: none;
+}
+
+
+  .okuda-art-1{
+    display: none;
+  }
+
+  
+  .blurb{
+    height: 100px;
+    width: 300px;
+        background-color: #219ebc	;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 1;
+    left: 175px;
+    top: 230px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 50px;
+      } 
+
+   .search-bar-main{
+    width: 250px;
+    margin-top: 50px;
+    padding: 20px;
+ 
+  }
+
+  .seach-bar-button{
+    margin-top: 50px;
+    padding: 20px;
+    background-color:  #219ebc;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+.has-width {
+    width: 20px;
+    height: 20px;
+  }
+  .white-space{
+    height: 210px;
+    background-image: url(../Images/triangle-background.webp);
+    display: flex;
+    justify-content: center;
+  }
+
+  .center-white-s{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    z-index: 1;
+  }
+  /*------------------------- Triangle Attempt -------------------------*/
+
+.triangle-1{
+  border-right: 16px solid transparent;
+  border-left: 16px solid transparent;
+  border-bottom: 20px solid #8888e8;
+  position: absolute;
+  right: 24px;
+  bottom: -170px;
+}
+
+ .triangle-2 {
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-left: 20px solid #e888a3;
+  position: absolute;
+  right: 20px;
+  bottom: -465px;
+} 
+
+.triangle-3 {
+  border-right: 16px solid transparent;
+  border-left: 16px solid transparent;
+  border-top: 20px solid #f7df6c;
+  position: absolute;
+  right: 40px;
+  bottom: -170px;
+}
+
+.triangle-4 {
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-right: 20px solid #8de698;
+  position: absolute;
+  right: 50px;
+  bottom: -465px;
+} 
+/* -------------------------WISE SAGE HELP MAN------------------------- */
+
+.help-section{
+  position: relative;
+}
+
+.help-man{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+.diego {
+  animation: levitate 1s infinite alternate;
+  display: block;
+  margin: 30px auto;
+  border-radius: 75px;
+  height: 245px;
+  width: 290px;
+  background-image: url(../Images/digo\ diego.jpg);
+  border: black groove 2px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.help-text{
+  align-items: center;
+  position: absolute;
+  width: 500px;
+  left: 300px;
+  top: 50px;
+}
+
+.rl-help-text{
+  display: none;
+}
+
+@keyframes levitate {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+/*-------------------------Job Cards/*------------------------- */
+
+ .jobs-suggestions{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(242, 240, 241);
+}
+
+.card{
+  max-width: 30%;
+  color: #1F1F1F;
+  align-items: center;
+  padding: 25px;
+  background-color: rgb(242, 240, 241);
+  border: none;
+} 
+
+.job-image{
+  background-size: cover;
+  max-width:100%;
+  max-height:100%;
+  border-bottom: solid black 8px;
+  border-radius: 5px;
+}
+
+.jobs-title{
+  padding-top: 10px;
+}
+
+.rl-jobs-title{
+  display: none;
+}
+
+.card:hover {
+  color:orange;
+  cursor: pointer;
+}
+
+/*-------------------------Interview Pop Ups/*------------------------- */
+.interviews-container{
+  display: none;
+  background-color: white;
+}
+
+.interviews-title{
+  text-align: center;
+  align-items: center;
+  padding: 30px 0;
+  font-weight: 800;
+  border-bottom: black solid 1px;
+}
+
+.information-rows{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px 0;
+}
+
+.information-rows-1{
+  background-color: rgb(242, 240, 241);
+}
+
+.show{
+  display: block;
+}
+
+.interview-card{
+  width: 400px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.video{
+  height: 300px;
+  border-radius: 10px;
+  max-width: 400px;
+}
+/* /*-------------------------Footer/*------------------------- */
+
+footer{
+padding-top: 40px;
+height: 200px;
+margin-bottom: 0px;
+max-width: fixed;
+max-width:1200px;
+margin: 0 auto;
+}
+
+
+
+.footer-ul{
+  margin: 0px;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  background-image: url(../Images/traingle-background.jpg);
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.copyright{
+  margin: auto; 
+  text-align: center;
+} 
+
+/* /*-------------------------Responsive Layout (RL)/*------------------------- */
+
+
+
+
+/* /*------------------------- Media to fix circles /*-------------------------*/ 
+
+@media (max-width:1200px) {
+  .banner{
+    display: none;
+  }
+
+  .banners-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .banner-1-1{
+    display: inline-block;
+    background-image: url(../Images/orange-circle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 10px;
+    margin: auto;
+    width: 350px; 
+    height: 350px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+.banner-2{
+  display: inline-block;
+  margin-top: 10px;
+  margin: auto;
+  height: 150px;
+  background-color: #d7421dd3;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.search-bar-main-2{
+  width: 180px;
+    margin: 40px 10px;
+    padding: 20px;
+ 
+}
+
+.seach-bar-button-2{
+    padding: 20px;
+    margin-right: 20px;
+    background-color:  #219ebc;
+    opacity: 0.9;
+    cursor: pointer;
+}
+}
+
+@media (max-width: 960px) {
+  main{
+    width: 100%;
+  }
+
+  nav .nav-right-ul {
+    display: none;
+  }
+/* /*------------------------- RL Hamburger Menu Image /*-------------------------*/
+
+  .ham {
+    display: inline-block;
+    position: absolute;
+    /* always keep ham on top of everything */
+    z-index: 1000;
+    top: 0px;
+    right: 0px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    cursor: pointer;
+    background-image: url("../Images/hamburgerIcon.png");
+    background-size: 100%;
+  }
+
+.showClose{
+    background-image: url(../Images/x-png.png);
+  }
+
+  .menu{
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: black;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      color: white;
+      transform: translateY(-100%);
+      transition: transform 0.2s ease;
+  }
+
+  .showNav{
+    transform: translateY(0);
+  }
+
+  .menu ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .menu ul li a {
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+  }
+  
+  .menu ul li a:hover, .menu ul li a:focus {
+    border-bottom: 2px solid white;
+  }
+/* ------------------------- Side menu appear -------------------------*/
+
+#menuOption{
+  padding: 15px 0px;
+  border-bottom: black solid 4px;
+}
+
+#menuOption:hover {
+  background-color: orange;  
+  color: black;
+  align-items: center;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.show-menu{
+  display: block;
+}
+/* ------------------------- RL Banner -------------------------*/
+
+.okuda-art{
+  display: none;
+}
+
+.banners-container{
+  display: none;
+}
+
+.container{
+  /* margin-top: 1px; */
+  flex-direction: column;
+  font-size: 14px;
+  background-color: #d7421dd3;
+  border-radius: 170px;
+}
+
+.middle-section{
+  font-size: 10px;
+}
+.banner{
+  display: inline;
+  max-width: 290px;
+  max-height: 350px;
+  background-image: url(../Images/okuda-small-1.jpg);
+  padding-top: 0px;
+  border-radius: 50px;
+}
+
+.banner h1, h3{
+  color: white;
+}
+
+.banner-1-1{
+  display: none;
+}
+
+.banner-2{
+  display: none;
+}
+
+.white-space{
+  height: 50px;
+}
+
+.diego h2, h3{
+  display: none;
+}
+
+.rl-help-text{
+  display: inline-block;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+
+/*------------------------- RL Job Cards-------------------------*/
+
+.card{
+  display: none;
+}
+
+.card p, .card img{
+  display: none;
+}
+
+.jobs-title{
+  display: none;
+}
+
+.jobs-suggestions{
+  flex-direction: column;
+  height: 300px;
+}
+
+.rl-jobs-title{
+  display: inline-block;
+  text-decoration: underline;
+  color: orange;
+  padding: 0px;
+  align-items: center;
+  margin: auto;
+}
+
+#rlCoder{
+  cursor: pointer;
+}
+/*------------------------- RL Information Rows -------------------------*/
+
+.information-rows-1{
+  display: none;
+}
+}
+
+@media (max-width: 600px){
+  main{
+    max-width:600px;
+  }
+
+  .information-rows{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .videos{
+    margin: auto;
+  }
+}
